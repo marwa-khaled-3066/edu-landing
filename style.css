@@ -1,0 +1,121 @@
+body{
+    font-family: "Bricolage Grotesque", sans-serif;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header{
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: rgba(127, 255, 212, 0.521);
+    padding: 0 50px 0 50px;
+    margin:0;
+}
+
+header h1{
+    margin:0;
+}
+
+footer{
+    background-color: aquamarine;
+    padding: 3px;
+}
+
+a{
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+}
+
+nav ul{
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    transition: background-color 0.2s;
+    padding: 5px;
+    margin: 2px;
+    border-radius: 5px;
+}
+
+nav ul li:hover{
+    background-color: purple;
+}
+
+.hero-section{
+    text-align: left;
+    background-image: url("img/hero-bg.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 400px;
+    padding: 10px;
+}
+
+#classroom{
+    color: pink;
+}
+
+.hero-content{
+    /* background-color: wheat; */
+    color: white;
+    font-size: 20px;
+    width:550px;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 25px 0 0 50px;
+}
+
+.features-section{
+    background-color: yellow;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.features-section h2{
+    color: blue;
+    padding: 0;
+    margin: 0;
+}
+
+.features-section h3{
+    color: green;
+    padding: 0;
+    margin: 0;
+}
+
+.features-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: center;
+}
+.feature-item{
+    background-color: darkgoldenrod;
+    text-align: left;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    margin: 20px 20px 0 20px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.feature-item:hover{
+    transform: translateY(-4px);
+}
+
+.feature-item h4{
+    padding:0;
+    margin: 0;
+}

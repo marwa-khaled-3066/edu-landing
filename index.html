@@ -3,52 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
     <title>E-PORA - Learn New Skills</title>
     </head>
 <body>
 
     <header>
-        <div class="container">
-            <div class="logo">
-                <h1>E-PORA.</h1>
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Instructor</a></li>
-                    <li><a href="#">Course</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </nav>
-            <div class="header-actions">
-                <a href="#" class="search-icon">Search Courses</a>
-                <a href="#" class="user-profile-icon">User</a>
-            </div>
+        <h1>E-PORA.</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Instructors</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="search-icon">Search Courses</button>
+            <button class="user-profile-icon">User</button>
         </div>
     </header>
 
     <section class="hero-section">
-        <div class="container">
             <div class="hero-content">
-                <p class="subheading">Learn New Skills & Popular Courses</p>
-                <h1>For Every Student, <br> Every Classroom.</h1>
-                <p class="description">Dramatically supply transparent deliverables before backward comp internal or "organic" sources. Competently leverage other.</p>
-                <a href="#" class="btn btn-primary">Explore Courses</a>
+                <p>Learn New Skills with Popular Courses</p>
+                <h1>For Every Student, <br> Every <span id="classroom">Classroom</span>.</h1>
+                <p>Dramatically supply transparent deliverables before backward comp internal or "organic" sources. Competently leverage other.</p>
+                <button class="explore">Explore Courses</button>
             </div>
-            <div class="hero-image">
-                <img src="placeholder-hero-image.jpg" alt="Student learning with a laptop">
-            </div>
-        </div>
     </section>
     
     <section class="features-section">
-        <div class="container">
-            <h2 class="section-title">What We Offer</h2>
-            <h3 class="section-subtitle">For Your Future Learning.</h3>
-            
+        <div class="features-top">
+            <h2>What We Offer</h2>
+            <h3>For Your Future Learning.</h3>
+        </div> 
             <div class="features-grid">
-                
                 <div class="feature-item">
                     <div class="icon-box">
                         <i class="icon-online-courses"></i>
@@ -61,7 +53,7 @@
                     <div class="icon-box">
                         <i class="icon-expert-trainer"></i>
                     </div>
-                    <h4>Expert Trainer</h4>
+                    <h4>Expert Trainers</h4>
                     <p>Interactively provide access world class materials for unique catalysts for change my cardinal.</p>
                 </div>
 
@@ -80,32 +72,30 @@
                     <h4>Life Time Access</h4>
                     <p>Interactively provide access world class materials for unique catalysts for change my cardinal.</p>
                 </div>
-
             </div>
-        </div>
     </section>
     
     <section class="about-courses-section">
-        <div class="container">
-            <div class="course-image-collage">
-                <img src="placeholder-man-with-laptop.jpg" alt="Man studying on a laptop in a library">
-                <img src="placeholder-girl-with-clock.jpg" alt="Girl looking at a clock">
-                <img src="placeholder-small-image.jpg" alt="Small student image">
-            </div>
-            <div class="course-content">
-                <p class="subheading">About Our Courses</p>
-                <h2>Explore Thousands of Creative Classes.</h2>
-                <p class="description">Dramatically supply transparent deliverables before backward comp internal or "organic" sources. Competently leverage other, transparent leverage other.</p>
-                <a href="#" class="btn btn-secondary">Read More</a>
-            </div>
+        <!-- <div class="course-image-collage">
+            <img src="placeholder-man-with-laptop.jpg" alt="Man studying on a laptop in a library">
+            <img src="placeholder-girl-with-clock.jpg" alt="Girl looking at a clock">
+            <img src="placeholder-small-image.jpg" alt="Small student image">
+        </div> -->
+        <div class="course-content">
+            <p>About Our Courses</p>
+            <h2>Explore Thousands of Creative Classes.</h2>
+            <p >Dramatically supply transparent deliverables before backward comp internal or "organic" sources. Competently leverage other, transparent leverage other.</p>
+            <button class="read-more">Read More</button>
         </div>
     </section>
 
     <section class="top-categories-section">
         <div class="container">
             <h2 class="section-title">Top Categories</h2>
-            </div>
+        </div>
     </section>
-
+    <footer>
+        <p>&copy; 2025, All rights reserved</p>
+    </footer>
     </body>
 </html>
