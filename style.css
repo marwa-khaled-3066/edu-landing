@@ -104,7 +104,7 @@ nav ul li:hover{
     background-color: darkgoldenrod;
     text-align: left;
     width: 200px;
-    height: 150px;
+    height: 120px;
     padding: 20px;
     margin: 20px 20px 0 20px;
     border-radius: 10px;
@@ -118,4 +118,66 @@ nav ul li:hover{
 .feature-item h4{
     padding:0;
     margin: 0;
+}
+
+.courses-section{
+    background-image: url("img/courses-bg.jpg");
+    background-size: cover;
+    background-position: left;
+    padding: 30px;
+}
+
+.courses-section .course-content h3{
+    padding: 0;
+    color: red;
+    margin: 0;
+}
+
+.course-content{
+    font-size: 16px;
+    grid-column: span 3;
+    width: 640px;
+    height: 145px;
+    display: inline-block;
+    text-align: right;
+    background-color:khaki;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.course-catalog{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: right;
+    justify-content: right;
+    background-color: transparent;
+}
+.course-item{
+    background-color:lavenderblush;
+    width: 200px;
+    height: 165px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.course-item:hover{
+    transform: translateY(-4px);
+}
+
+img{
+    border-radius: 10px;
+    margin:0;
+    padding:0;
+}
+
+button{
+  padding: 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 5px;
+  background:purple;
+  color:white;
 }
