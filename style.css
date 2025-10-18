@@ -4,18 +4,21 @@ body{
     margin: 0;
     min-height: 100vh;
     text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header{
+    color: #163688;
     z-index: 1;
     top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    background-color: rgba(127, 255, 212, 0.521);
+    background-color: rgba(174, 214, 207, 0.7);
     padding: 0 50px 0 50px;
     margin:0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1{
@@ -23,8 +26,9 @@ header h1{
 }
 
 footer{
-    background-color: aquamarine;
+    background-color: rgba(174, 214, 207, 0.7);
     padding: 3px;
+    color: #163688;
 }
 
 a{
@@ -49,6 +53,7 @@ nav ul li{
 
 nav ul li:hover{
     background-color: purple;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section{
@@ -61,11 +66,10 @@ nav ul li:hover{
 }
 
 #classroom{
-    color: pink;
+    color: #6ac8ff;
 }
 
 .hero-content{
-    /* background-color: wheat; */
     color: white;
     font-size: 20px;
     width:550px;
@@ -75,7 +79,7 @@ nav ul li:hover{
 }
 
 .features-section{
-    background-color: yellow;
+    background-color: #91ADC8;
     display: block;
     justify-content: center;
     align-items: center;
@@ -83,13 +87,13 @@ nav ul li:hover{
 }
 
 .features-section h2{
-    color: blue;
+    color: #163688;
     padding: 0;
     margin: 0;
 }
 
 .features-section h3{
-    color: green;
+    color: #FAFDD6;
     padding: 0;
     margin: 0;
 }
@@ -101,7 +105,8 @@ nav ul li:hover{
     justify-content: center;
 }
 .feature-item{
-    background-color: darkgoldenrod;
+    color: #FAFDD6;
+    background-color: #647FBC;
     text-align: left;
     width: 200px;
     height: 120px;
@@ -109,6 +114,7 @@ nav ul li:hover{
     margin: 20px 20px 0 20px;
     border-radius: 10px;
     transition: transform 0.5s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item:hover{
@@ -129,18 +135,18 @@ nav ul li:hover{
 
 .courses-section .course-content h3{
     padding: 0;
-    color: red;
+    color: #163688;
     margin: 0;
 }
 
 .course-content{
+    color: #163688;
     font-size: 16px;
     grid-column: span 3;
     width: 640px;
     height: 145px;
     display: inline-block;
     text-align: right;
-    background-color:khaki;
     padding: 20px;
     margin: 5px;
     border-radius: 10px;
@@ -154,13 +160,15 @@ nav ul li:hover{
     background-color: transparent;
 }
 .course-item{
-    background-color:lavenderblush;
+    color: #163688;
+    background-color:#FAFDD6;
     width: 200px;
     height: 165px;
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
     transition: transform 0.5s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .course-item:hover{
@@ -178,6 +186,60 @@ button{
   font-size: 12px;
   border: none;
   border-radius: 5px;
-  background:purple;
-  color:white;
+  background: #163688;;
+  color:#FAFDD6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal_container{
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0,0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+}
+
+.modal_container.show{
+    opacity: 1;    
+    pointer-events: auto;
+}
+
+.modal{
+    background-color: #647FBC;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal h1{
+    margin: 0;
+    color:#FAFDD6;
+}
+
+#signup-form{
+    padding: 20px 50px;;
+}
+
+.input-field{
+    background: #eaeaea;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding:20px 15px;
 }

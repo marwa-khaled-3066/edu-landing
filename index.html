@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="modal_script.js" defer></script>
+    <script src="script.js" defer></script> 
     <title>Coursify - Learn New Skills</title>
     </head>
 <body>
@@ -22,9 +24,30 @@
         </nav>
         <div class="header-actions">
             <button class="search-icon">Search Courses</button>
-            <button class="user-profile-icon">Login</button>
+            <button id="modal-open">Login</button>
         </div>
     </header>
+
+    <div class="modal_container" id="modal-container">
+        <div class="modal">
+            <h1>Sign Up</h1>
+            <form id="signup-form">
+                <div class="input-field">
+                    <input type="text" placeholder="Name">
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Password">
+                </div>
+                <div class="submit-btn">
+                    <button id="submit-btn">Register account</button>
+                </div>
+            </form>
+            <button id="modal-close">Close</button>
+        </div>
+    </div>
 
     <section class="hero-section">
             <div class="hero-content">
