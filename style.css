@@ -32,8 +32,12 @@ footer{
 }
 
 a{
+    color: #163688;
     text-decoration: none;
     padding: 0px 20px 0px 20px;
+}
+a:hover{
+    color:#FAFDD6;
 }
 
 nav ul{
@@ -52,7 +56,7 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background-color: purple;
+    background-color: #647FBC;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -105,7 +109,7 @@ nav ul li:hover{
     justify-content: center;
 }
 .feature-item{
-    color: #FAFDD6;
+    color: white;
     background-color: #647FBC;
     text-align: left;
     width: 200px;
@@ -230,7 +234,7 @@ button{
 }
 
 .input-field{
-    background: #eaeaea;
+    background: white;
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);

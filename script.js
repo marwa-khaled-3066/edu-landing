@@ -44,15 +44,14 @@ const classroomSpan = document.getElementById('classroom');
 setInterval(() => {
     if (classroomSpan){
         var text= classroomSpan.textContent;
-        console.log(text);
         switch(text){
             case "Future":
                 classroomSpan.textContent = "Classroom";
-                console.log("تم تغيير النص في العنوان الرئيسي.");
+                // console.log("تم تغيير النص في العنوان الرئيسي.");
                 break;
             case "Classroom":
                 classroomSpan.textContent = "Future";
-                console.log("تم تغيير النص في العنوان الرئيسي.");
+                // console.log("تم تغيير النص في العنوان الرئيسي.");
                 break;
             default:
                 break;
