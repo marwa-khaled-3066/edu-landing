@@ -10,21 +10,20 @@
     <title>Coursify - Learn New Skills</title>
     </head>
 <body>
-
     <header>
         <h1>Coursify</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Instructors</a></li>
-                <li><a href="#">Courses</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#">Awards</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
         </nav>
         <div class="header-actions">
             <button class="search-icon">Search Courses</button>
-            <button id="modal-open">Login</button>
+            <button id="modal-open">Sign up</button>
         </div>
     </header>
 
@@ -63,42 +62,42 @@
             <h2>What We Offer</h2>
             <h3>For Your Future Learning.</h3>
         </div> 
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="icon-box">
-                        <i class="icon-online-courses"></i>
-                    </div>
-                    <h4>Online Courses</h4>
-                    <p>Advance your knowledge through our comprehensive online courses.</p>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="icon-online-courses"></i>
                 </div>
-
-                <div class="feature-item">
-                    <div class="icon-box">
-                        <i class="icon-expert-trainer"></i>
-                    </div>
-                    <h4>Expert Trainers</h4>
-                    <p>Learn from distinguished experts with proven industry experience.</p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="icon-box">
-                        <i class="icon-get-certificate"></i>
-                    </div>
-                    <h4>Get Certificate</h4>
-                    <p>Receive an accredited certificate to validate your achievement.</p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="icon-box">
-                        <i class="icon-life-time-access"></i>
-                    </div>
-                    <h4>Lifetime Access</h4>
-                    <p>Gain lifetime access to all course materials for continuous learning.</p>
-                </div>
+                <h4>Online Courses</h4>
+                <p>Advance your knowledge through our comprehensive online courses.</p>
             </div>
+
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="icon-expert-trainer"></i>
+                </div>
+                <h4>Expert Trainers</h4>
+                <p>Learn from distinguished experts with proven industry experience.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="icon-get-certificate"></i>
+                </div>
+                <h4>Get Certificate</h4>
+                <p>Receive an accredited certificate to validate your achievement.</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="icon-life-time-access"></i>
+                </div>
+                <h4>Lifetime Access</h4>
+                <p>Gain lifetime access to all course materials for continuous learning.</p>
+            </div>
+        </div>
     </section>
     
-    <section class="courses-section">
+    <section class="courses-section" id="courses">
         <div class="course-catalog">
 
             <div class="course-item">
@@ -129,10 +128,25 @@
                 <img src="img\icon_science.jpg" alt="Science">
                 <h3>Science</h3>
             </div>
+    </section>
+
+    <section class="instructors" id="instructors">
+        <h1>Our Instructors</h1>
+        <div class="cards">
+            <div class="instructor-card" id="prof1">
+                <h2>John Doe</h2>
+                <p>Professor Roe is a dedicated teacher who values clarity, curiosity, and meaningful learning. They aim to make every class an engaging and supportive space for students.</p>
+            </div>
+            <div class="instructor-card" id="prof2">
+                <h2>Richard Roe</h2>
+                <p>Professor Doe is an enthusiastic educator who fosters an inclusive, curious classroom. They enjoy learning with their students and helping them grow with confidence.</p>
+            </div>
         </div>
     </section>
+
     <footer>
         <p>&copy; 2025, All rights reserved</p>
     </footer>
-    </body>
+</body>
+
 </html>

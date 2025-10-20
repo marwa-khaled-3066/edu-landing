@@ -4,7 +4,6 @@ body{
     margin: 0;
     min-height: 100vh;
     text-align: center;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header{
@@ -19,6 +18,7 @@ header{
     padding: 0 50px 0 50px;
     margin:0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header h1{
@@ -29,6 +29,7 @@ footer{
     background-color: rgba(174, 214, 207, 0.7);
     padding: 3px;
     color: #163688;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 a{
@@ -80,6 +81,7 @@ nav ul li:hover{
     padding: 20px;
     border-radius: 10px;
     margin: 25px 0 0 50px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .features-section{
@@ -94,12 +96,14 @@ nav ul li:hover{
     color: #163688;
     padding: 0;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .features-section h3{
     color: #FAFDD6;
     padding: 0;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .features-grid{
@@ -118,7 +122,8 @@ nav ul li:hover{
     margin: 20px 20px 0 20px;
     border-radius: 10px;
     transition: transform 0.5s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .feature-item:hover{
@@ -128,6 +133,7 @@ nav ul li:hover{
 .feature-item h4{
     padding:0;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .courses-section{
@@ -141,6 +147,7 @@ nav ul li:hover{
     padding: 0;
     color: #163688;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .course-content{
@@ -154,6 +161,7 @@ nav ul li:hover{
     padding: 20px;
     margin: 5px;
     border-radius: 10px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .course-catalog{
@@ -171,12 +179,13 @@ nav ul li:hover{
     padding: 10px;
     margin: 5px;
     border-radius: 10px;
-    transition: transform 0.5s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .course-item:hover{
-    transform: translateY(-4px);
+    transform: scale(1.05);
 }
 
 img{
@@ -246,4 +255,70 @@ input{
     border: 0;
     outline: 0;
     padding:20px 15px;
+}
+
+.instructors{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    background-image: url("img/books-shelf.jpg");
+    background-size: cover;
+}
+.instructors h1{
+    color: white;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0.5);
+    border-radius: 5px;
+    padding: 40px;
+}
+.instructor-card{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    margin: 0 10px 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.5s;
+}
+.instructor-card:hover{
+    transform: scale(1.03);
+}
+.instructor-card p{
+    background-color: rgba(22, 54, 136, 0.6);
+    padding: 20px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.instructor-card h2{
+    position: absolute;
+    bottom:150px;
+    left: 30px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgba(22, 54, 136, 0.6);
+    text-shadow: 0 3px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#prof1{
+    background-image: url(img/prof1.jpg);
+}
+#prof2{
+    background-image: url(img/prof2.jpg);
 }
