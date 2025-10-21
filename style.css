@@ -8,7 +8,7 @@ body{
 
 header{
     color: #163688;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -182,6 +182,7 @@ nav ul li:hover{
     transition: transform 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .course-item:hover{
@@ -195,13 +196,14 @@ img{
 }
 
 button{
-  padding: 10px;
-  font-size: 12px;
-  border: none;
-  border-radius: 5px;
-  background: #163688;;
-  color:#FAFDD6;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #163688;;
+    color:#FAFDD6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .modal_container{
@@ -291,6 +293,7 @@ input{
     position: relative;
     z-index: 1;
     transition: transform 0.5s;
+    cursor: pointer;
 }
 .instructor-card:hover{
     transform: scale(1.03);

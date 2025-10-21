@@ -1,0 +1,76 @@
+/* ======================================= */
+/* تنسيق قسم الجوائز (Awards Section) */
+/* ======================================= */
+
+.awards-section {
+    /* اختيار لون خلفية مميز للجوائز (مثلاً أزرق فاتح أو رمادي) */
+    background-color: #e6f7ff; 
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.awards-top h2 {
+    color: #004d99; /* لون أزرق داكن للعناوين */
+    margin-bottom: 5px;
+}
+
+.awards-top h3 {
+    color: #1a73e8; /* لون أزرق متوسط */
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.awards-grid {
+    display: grid;
+    /* 4 أعمدة لتوزيع الجوائز بالتساوي */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.award-item {
+    background-color: white; 
+    padding: 25px;
+    border-radius: 12px;
+    /* ظل أعمق قليلاً لجذب الانتباه */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.award-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.award-icon-box {
+    width: 80px;
+    height: 80px;
+    background-color: #ffe0b2; /* لون ذهبي/نحاسي فاتح لخلفية الأيقونة */
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award-icon-box img {
+    width: 50px;
+    height: 50px;
+    /* إزالة أي حدود أو تنسيقات سابقة للصور */
+    border-radius: 0; 
+}
+
+.award-item h4 {
+    color: #333;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.award-item p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
