@@ -4,12 +4,12 @@
 // نحصل على زر "Explore Courses" باستخدام مُحدّد الـ class
 const exploreButton = document.querySelector('.explore');
 
-// إضافة مُستمع حدث (Event Listener) للنقر
-exploreButton.addEventListener('click', function() {
-    console.log("تم النقر على زر استكشاف الدورات!");
-    // عرض رسالة تنبيه بسيطة
-    alert("مرحبًا بك في Coursify! استكشف آلاف الدورات المتاحة.");
-});
+// // إضافة مُستمع حدث (Event Listener) للنقر
+// exploreButton.addEventListener('click', function() {
+//     console.log("تم النقر على زر استكشاف الدورات!");
+//     // عرض رسالة تنبيه بسيطة
+//     alert("مرحبًا بك في Coursify! استكشف آلاف الدورات المتاحة.");
+// });
 
 
 // ===================================

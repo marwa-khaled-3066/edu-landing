@@ -127,7 +127,7 @@ nav ul li:hover{
 }
 
 .feature-item:hover{
-    transform: translateY(-4px);
+    transform: translateY(-8px);
 }
 
 .feature-item h4{
@@ -206,6 +206,20 @@ button{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+#modal-open{
+    transition: transform 0.5s;
+}
+#modal-open:hover{
+    transform: scale(1.2);
+}
+
+.explore{
+    transition: transform 0.5s;
+}
+.explore:hover{
+    transform: scale(1.2);
+}
+
 .modal_container{
     opacity: 0;
     display: flex;
@@ -218,6 +232,7 @@ button{
     height: 100vh;
     width: 100vw;
     pointer-events: none;
+    transition: opacity 0.3s;
 }
 
 .modal_container.show{
@@ -292,11 +307,12 @@ input{
     justify-content: center;
     position: relative;
     z-index: 1;
-    transition: transform 0.5s;
+    transition: transform 0.5s, box-shadow 0.5s;
     cursor: pointer;
 }
 .instructor-card:hover{
-    transform: scale(1.03);
+    transform: scale(1.04);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 .instructor-card p{
     background: rgba(22, 54, 136, 0.6);
@@ -325,4 +341,41 @@ input{
 }
 #prof2{
     background-image: url(img/prof2.jpg);
+}
+
+.blog{
+    background: linear-gradient(45deg, #f2fcfe 10%, #1c92d2);
+    padding: 20px;
+}
+
+.blog h2{
+    color: white;
+    margin: 0;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.article-grid{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+.article-item{
+    width: 204px;
+    background: #ffe0b2;
+    color: #0b1b41;
+    margin: 15px 30px 10px 30px;
+    padding: 0 0 10px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 190px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.article-item p{
+    margin:2px;
+}
+.article-item:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
