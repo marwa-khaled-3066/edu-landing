@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="awards_style.css">
     <script src="modal_script.js" defer></script>
-    <script src="script.js" defer></script> 
+    <script src="script.js" defer></script>
     <title>Coursify - Learn New Skills</title>
     </head>
 <body>
@@ -101,8 +101,7 @@
     
     <section class="courses-section" id="courses">
         <div class="course-catalog">
-
-            <div class="course-item">
+            <div class="course-item" id="art">
                 <img src="img\icon_art.jpg" alt="Art">
                 <h3>Art</h3>
             </div>
@@ -112,25 +111,78 @@
                 <p>Unlock your potential with access to thousands of creative classes designed to spark inspiration and develop practical skills. Whether you’re pursuing a new hobby or advancing your professional expertise, our diverse range of courses offers endless opportunities to learn, create, and grow.</p>
             </div>
 
-            <div class="course-item">
+            <div class="course-item" id="geo">
                 <img src="img\icon_geo.jpg" alt="Geography">
                 <h3>Geography</h3>
             </div>
 
-            <div class="course-item">
+            <div class="course-item" id="music">
                 <img src="img\icon_music.jpg" alt="Music">
                 <h3>Music</h3>
             </div>
-            <div class="course-item">
+            <div class="course-item" id="lit">
                 <img src="img\icon_lit.jpg" alt="Literature">
                 <h3>Literature</h3>
             </div>
 
-            <div class="course-item">
+            <div class="course-item" id="science">
                 <img src="img\icon_science.jpg" alt="Science">
                 <h3>Science</h3>
             </div>
     </section>
+
+    <div class="course-modal" id="art-container">
+        <div class="art-modal">
+            <h2>Art Courses</h2>
+            <p>Explore art principles, techniques, and history. Learn to create and appreciate visual art through drawing, painting, and sculpture.</p>
+            
+            <div class="art-grid">
+                <div class="art-course">
+                    <img src="img/9b77f71ca678d0bb77964022ec889ceebbac344a-1440x720.png" alt="Graphic Design">
+                    <p>Fundamentals of Graphic Design</p>
+                </div>
+
+                <div class="art-course">
+                    <img src="img/starrynight.jpg" alt="Modern Art">
+                    <p>Modern and Contemporary Art and Design Specialization</p>
+                </div>
+            </div>
+            <button id="art-close">Close</button>
+        </div>
+    </div>
+
+
+    <div class="course-modal" id="science-container">
+        <div class="science-modal">
+            <h2>Science Courses</h2>
+            <p>Study science for a comprehensive understanding of natural phenomena. Learn about physics, chemistry, biology, and scientific methods.</p>
+            
+            <div class="science-grid">
+                <div class="science-course">
+                    <img src="img/art4.jpg" alt="star">
+                    <p>Star and Planet Formation</p>
+                </div>
+
+                <div class="science-course">
+                    <img src="img/art5.jpg" alt="marine">
+                    <p>Marine Biology</p>
+                </div>
+
+                <div class="science-course">
+                    <img src="img/art6.jpg" alt="plant">
+                    <p>Plant diversity and evolution - a global perspective</p>
+                </div>
+            </div>
+            <button id="science-close">Close</button>
+        </div>
+    </div>
+
+    <div class="course-modal" id="empty-container">
+        <div class="empty-modal">
+            <h1>Coming Soon</h1>
+            <button id="empty-close">Close</button>
+        </div>
+    </div>
 
     <section class="instructors" id="instructors">
         <h1>Our Instructors</h1>

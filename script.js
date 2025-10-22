@@ -2,7 +2,7 @@
 // 1. التفاعل مع زر "Explore Courses"
 // ===================================
 // نحصل على زر "Explore Courses" باستخدام مُحدّد الـ class
-const exploreButton = document.querySelector('.explore');
+// const exploreButton = document.querySelector('.explore');
 
 // // إضافة مُستمع حدث (Event Listener) للنقر
 // exploreButton.addEventListener('click', function() {
@@ -58,3 +58,24 @@ setInterval(() => {
         }
     }
 }, 1500); // سيتم التغيير بعد 1.5 ثانية (1500 مللي ثانية)
+
+// ===================================
+// 5. التفاعل مع مربعات الجوائز (Awards)
+// ===================================
+
+
+// // نحصل على جميع عناصر الجوائز
+// const awardItems = document.querySelectorAll('.award-item');
+
+// // نمر على كل عنصر لإضافة مستمع حدث للنقر
+// awardItems.forEach(award => {
+//     award.addEventListener('click', function() {
+//         // نحصل على اسم الجائزة الرسمي من خاصية data-award-name في الـ HTML
+//         const awardName = award.getAttribute('data-award-name');
+        
+//         console.log(تم النقر على جائزة: ${awardName});
+        
+//         // عرض رسالة تنبيه للمستخدم
+//         alert(نحن فخورون بجائزة: "${awardName}"!);
+//     });
+// });
