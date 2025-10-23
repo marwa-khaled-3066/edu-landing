@@ -381,7 +381,6 @@ input{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-
 .art-modal, .science-modal, .empty-modal{
     background: linear-gradient(45deg, #f2fcfe 10%, #1c92d2);
     width: 600px;
